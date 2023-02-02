@@ -8,6 +8,7 @@ import (
 
 const webPort = "8080"
 
+// Add config to handler
 type Config struct{}
 
 func main() {

@@ -21,6 +21,7 @@ func (app *Config) routes() http.Handler {
 		MaxAge:           300,
 	}))
 
+	//Check if service is alive or not
 	mux.Use(middleware.Heartbeat("/ping"))
 
 	mux.Post("/", app.Broker)
