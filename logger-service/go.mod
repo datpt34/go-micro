@@ -2,7 +2,11 @@ module log-service
 
 go 1.18
 
-require go.mongodb.org/mongo-driver v1.8.4
+require (
+	github.com/go-chi/chi/v5 v5.0.7
+	github.com/go-chi/cors v1.2.0
+	go.mongodb.org/mongo-driver v1.8.4
+)
 
 require (
 	github.com/go-stack/stack v1.8.0 // indirect
