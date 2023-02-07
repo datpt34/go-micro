@@ -3,3 +3,4 @@ frontApp
 brokerApp
 authApp
 db-data
+logger-service/loggerServiceApp
