@@ -114,6 +114,7 @@ func handlePayload(payload Payload) {
 }
 
 func logEvent(entry Payload) error {
+	// Copy from logItem in broker servive
 	jsonData, _ := json.MarshalIndent(entry, "", "\t")
 
 	logServiceURL := "http://logger-service/log"
