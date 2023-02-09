@@ -1,6 +1,7 @@
 .DS_Store
-frontApp
-brokerApp
-authApp
+# frontApp
+# brokerApp
+# authApp
 db-data
-logger-service/loggerServiceApp
+# logger-service/loggerServiceApp
+*App
