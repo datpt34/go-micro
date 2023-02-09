@@ -8,3 +8,5 @@
 # 3. Logger service
   - Call by another service only (Broker, Authentication)
   - Using MongoDB to store log
+# 4. Mail service
+  - Send email to Mailhog
