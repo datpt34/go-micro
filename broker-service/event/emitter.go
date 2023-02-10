@@ -1,7 +1,6 @@
 package event
 
 import (
-	"context"
 	"log"
 
 	amqp "github.com/rabbitmq/amqp091-go"
@@ -30,17 +29,7 @@ func (e *Emitter) Push(event string, severity string) error {
 
 	log.Println("Pushing to channel")
 
-	// err = channel.Publish(
-	// 	"logs_topic",
-	// 	severity,
-	// 	false,
-	// 	false,
-	// 	amqp.Publishing{
-	// 		ContentType: "text/plain",
-	// 		Body:        []byte(event),
-	// 	},
-	// )
-	err = channel.PublishWithContext(context.TODO(),
+	err = channel.Publish(
 		"logs_topic",
 		severity,
 		false,
